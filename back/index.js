@@ -145,7 +145,7 @@ app.use((err, req, res, next) => {
 });
 
 // Server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
   console.log(`OAuth redirect URI: ${process.env.REDIRECT_URI || 'http://localhost:5174/dashboard'}`);

@@ -1,24 +1,21 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css'
+import './App.css'; // Make sure this file exists and is styled appropriately
 import Register from './Auth/Register';
-import Login from './Auth/login';
-import Dashboard from './pages/Dashboard';
-import { GoogleOAuthProvider } from '@react-oauth/google';
+import Login from './Auth/Login';
+import ProductDetail from './pages/Dashboard'; // Changed the path for clarity
 
 const App = () => {
-
   return (
-    <GoogleOAuthProvider clientId="1731328532-qjuttrrcijnir9q3be2h22llkajm6oqu.apps.googleusercontent.com">
-      <Router>
-        <Routes>
-          <Route path='/' element = {<Register/>} />
-          <Route path='/login' element = {<Login/>} />
-          <Route path='/dashboard' element = {<Dashboard/>} />
-        </Routes>
-      </Router>
-    </GoogleOAuthProvider>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<ProductDetail product={{ name: 'Sample Product', price: 99.99, image: '/path/to/image' }} />} />
+        {/* Passing a sample product object as a prop to ProductDetail */}
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

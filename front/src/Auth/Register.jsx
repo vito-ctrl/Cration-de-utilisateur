@@ -60,6 +60,7 @@ const Register = () => {
         e.preventDefault();
         
         if (validateData()) {
+            console.log('submet succece fully')
             try {
                 const res = await fetch('/api/auth/signup', {
                     method: 'POST',
@@ -68,7 +69,7 @@ const Register = () => {
                     },
                     body: JSON.stringify(formData),
                 });
-
+                console.log('submet succece fully')
                 const data = await res.json();
                 
                 if (res.ok) {
@@ -92,7 +93,7 @@ const Register = () => {
     console.log(formData)
 
     return (
-        <div className="font-[sans-serif]">
+        <div className="font-[sans-serif]  bg-black">
             <div className="min-h-screen flex fle-col items-center justify-center py-6 px-4" id="login">
                 <div className="grid md:grid-cols-2 items-center gap-10 max-w-6xl max-md:max-w-md w-full">
                     <form className="max-w-md md:ml-auto w-full" onSubmit={handleSubmit}>
