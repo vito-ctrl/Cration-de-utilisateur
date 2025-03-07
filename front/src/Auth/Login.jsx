@@ -55,11 +55,8 @@ const Login = () => {
 
     console.log(Formdata)
     return(
-<<<<<<< HEAD
         <div className="font-[sans-serif] bg-black">
-=======
         <div className="font-[sans-serif]">
->>>>>>> f2a4246cbd3dfbd359879afa9563f22ff2abf72e
       <div className="min-h-screen flex fle-col items-center justify-center py-6 px-4" id="login">
         <div className="grid md:grid-cols-2 items-center gap-10 max-w-6xl max-md:max-w-md w-full">
           
@@ -123,6 +120,7 @@ const Login = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
     )
 }
