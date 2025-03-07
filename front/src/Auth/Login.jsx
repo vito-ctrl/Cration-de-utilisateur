@@ -55,7 +55,7 @@ const Login = () => {
 
     console.log(Formdata)
     return(
-        <div className="font-[sans-serif]">
+        <div className="font-[sans-serif] bg-black">
       <div className="min-h-screen flex fle-col items-center justify-center py-6 px-4" id="login">
         <div className="grid md:grid-cols-2 items-center gap-10 max-w-6xl max-md:max-w-md w-full">
           
