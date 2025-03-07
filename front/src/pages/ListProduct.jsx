@@ -1,4 +1,6 @@
-import React ,{ Fragment, useState } from 'react'
+'use client'
+
+import React, { Fragment, useState } from 'react'
 import {
   Dialog,
   DialogBackdrop,
@@ -14,7 +16,8 @@ import {
   TabPanels,
 } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from '../assets/icons8-u-shaped-style-96.png'
+import logo from '../assets/icons8-sewing-button-100.png'
+
 const navigation = {
   categories: [
     {
@@ -236,19 +239,6 @@ export default function Example() {
                   </a>
                 </div>
               ))}
-            </div>
-
-            <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-              <div className="flow-root">
-                <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                  Sign in
-                </a>
-              </div>
-              <div className="flow-root">
-                <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                  Create account
-                </a>
-              </div>
             </div>
 
             <div className="border-t border-gray-200 px-4 py-6">

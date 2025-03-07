@@ -4,7 +4,7 @@ import './App.css'; // Make sure this file exists and is styled appropriately
 import Register from './Auth/Register';
 import Login from './Auth/Login';
 import ProductList from './pages/Dashboard';
-import Example from './pages/Navbar';
+import Example from './pages/ListProduct';
 
 const App = () => {
   return (
